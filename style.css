@@ -1,0 +1,107 @@
+html,body{
+	height: 100%;
+	background-color: #202020;
+}
+
+.wrap{
+	height: 100%;
+	padding: 50px 10px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+
+.slider {
+	position: relative;
+	padding: 0px 30px;
+	max-width: 100%;
+}
+
+.slick-list {
+	overflow: hidden;
+}
+
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+.slide {
+	padding: 0px 5px;
+	
+	display: inline-block; 
+    overflow: hidden; 
+}
+
+img{
+	max-width: 100%;
+}
+
+@media (min-width:767px){
+	.slider {padding: 0px 60px;}
+	.wrap   {padding: 50px ;}
+	.slide{padding: 0px 15px;}
+	.slick-dots li{margin: 0px 10px;}
+}
+
+.slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -30px 0px 0px 0px;
+	font-size: 0;
+	width: 30px;
+	height: 60px;
+}
+
+.slick-arrow.slick-prev{
+	left: 0;
+	background: url('images/left_button.png') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next{
+	right: 0;
+	background: url('images/right_button.png') 0 0 / 100% no-repeat;
+}
+.slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+
+.slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slick-dots li{
+	list-style: none;
+	margin: 0px 5px;
+}
+.slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.slick-dots li.slick-active button{
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+
+
+    img {
+    transition: 1s;
+    display: block; 
+   }
+    img:hover {
+    transform: scale(1.2); 
+   }
+   img.unscale{
+	   	transform: scale(1);
+   }
+*,*:before,*:after{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
